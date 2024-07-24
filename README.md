@@ -5,7 +5,8 @@
 1. 构建：
 `cd ./docker && docker build -t siyuan .`
 2. 执行：
-`docker run -v ./:/workspace/ -it siyuan`
+`cd ../.. && docker run -v ./:/workspace/ -it siyuan`
+
 3. 进入：
     * 首先使用 `docker container ls -a`查看运行docker container，假设id为 abcd
     * `docker exec -it abcd sh`
